@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: #edf2f8;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  & .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    width: 700px;
+    height: 34%;
+    & .left-part {
+      width: 85%;
+
+      height: 100%;
+      border-bottom-left-radius: 10px;
+
+      border-top-left-radius: 10px;
+      background-image: url("./images/drawers.jpg");
+      background-size: cover;
+    }
+  }
+  & .right-part {
+    padding: 0px 20px;
+    & .title {
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 50px;
+      padding-top: 46px;
+      font-size: 19px;
+      font-weight: 700;
+      color: #48556a;
+    }
+    & .text {
+      font-weight: 500;
+      font-size: 13px;
+      padding-left: 20px;
+      padding-right: 25px;
+      color: #6d7f97;
+    }
+
+    & .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px 55px 20px;
+      & .person {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-size: 14px;
+        & .name {
+          color: #48556a;
+          font-weight: 700;
+        }
+        & .data {
+          color: hsl(212, 23%, 69%);
+          font-weight: 500;
+        }
+      }
+      & .person img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      & .share {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #eef1f5;
+      }
+    }
+  }
+}
